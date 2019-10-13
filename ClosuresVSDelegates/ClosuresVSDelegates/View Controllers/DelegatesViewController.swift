@@ -37,6 +37,8 @@ class DelegatesViewController: UIViewController {
 
 extension DelegatesViewController: UITableViewDataSource, UITableViewDelegate {
     
+    // UITableViewDataSource
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return animals.count
     }
@@ -46,6 +48,12 @@ extension DelegatesViewController: UITableViewDataSource, UITableViewDelegate {
         cell.delegate = self
         cell.configure(with: animals[indexPath.row])
         return cell
+    }
+    
+    // UITableViewDelegate
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
