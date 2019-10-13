@@ -51,7 +51,7 @@ extension ClosuresViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AnimalClosuresCell", for: indexPath) as! AnimalClosuresCell
         cell.didTapNoise = showAlert
         
-        // OR
+        // OR put implementation here
         /*cell.didTapNoise = { [weak self] animal in
             guard let self = self else { return }
             let alert = UIAlertController(title: "What is \(animal.name)'s noise?", message: nil, preferredStyle: .alert)
