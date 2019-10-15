@@ -113,7 +113,7 @@
         <!--Delegates View Controller-->
         <scene sceneID="FLa-kp-gnJ">
             <objects>
-                <viewController interfaceStyle="dark" id="6bE-zK-ZsT" customClass="DelegatesViewController" customModule="ClosuresVSDelegates" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6bE-zK-ZsT" customClass="DelegatesViewController" customModule="ClosuresVSDelegates" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VqJ-K9-KUx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,6 +172,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="6bE-zK-ZsT" id="5h8-oi-ldU"/>
+                                    <outlet property="delegate" destination="6bE-zK-ZsT" id="zB5-VU-De4"/>
                                 </connections>
                             </tableView>
                         </subviews>
